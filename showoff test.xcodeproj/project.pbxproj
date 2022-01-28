@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED325E4D27A32AD90072F63D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED325E4C27A32AD90072F63D /* AppDelegate.swift */; };
+		ED325E4F27A32AD90072F63D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED325E4E27A32AD90072F63D /* SceneDelegate.swift */; };
+		ED325E5127A32AD90072F63D /* FlickrPicturesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED325E5027A32AD90072F63D /* FlickrPicturesVC.swift */; };
+		ED325E5427A32AD90072F63D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED325E5227A32AD90072F63D /* Main.storyboard */; };
+		ED325E5627A32ADA0072F63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED325E5527A32ADA0072F63D /* Assets.xcassets */; };
+		ED325E5927A32ADA0072F63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED325E5727A32ADA0072F63D /* LaunchScreen.storyboard */; };
+		ED325E6427A32B690072F63D /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED325E6327A32B690072F63D /* FlickrAPI.swift */; };
+		ED94A58D27A32CF200F0645D /* FlickrPicturesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94A58C27A32CF200F0645D /* FlickrPicturesVM.swift */; };
+		ED94A59027A32EB000F0645D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94A58F27A32EB000F0645D /* NetworkManager.swift */; };
+		ED94A59427A3478200F0645D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ED94A59327A3478200F0645D /* Kingfisher */; };
+		ED94A59827A347B100F0645D /* FlickrPictureCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94A59627A347B100F0645D /* FlickrPictureCVCell.swift */; };
+		ED94A59927A347B100F0645D /* FlickrPictureCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED94A59727A347B100F0645D /* FlickrPictureCVCell.xib */; };
+		ED94A59C27A3508400F0645D /* ShowPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94A59B27A3508400F0645D /* ShowPhotoVC.swift */; };
+		ED94A5A127A3542E00F0645D /* FlickerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94A5A027A3542E00F0645D /* FlickerWrapper.swift */; };
+		ED94A5B027A357F500F0645D /* Array + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED94A5AF27A357F500F0645D /* Array + Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED325E4927A32AD90072F63D /* showoff test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "showoff test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED325E4C27A32AD90072F63D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED325E4E27A32AD90072F63D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED325E5027A32AD90072F63D /* FlickrPicturesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPicturesVC.swift; sourceTree = "<group>"; };
+		ED325E5327A32AD90072F63D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED325E5527A32ADA0072F63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED325E5827A32ADA0072F63D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED325E5A27A32ADA0072F63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED325E6327A32B690072F63D /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		ED94A58C27A32CF200F0645D /* FlickrPicturesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPicturesVM.swift; sourceTree = "<group>"; };
+		ED94A58F27A32EB000F0645D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ED94A59627A347B100F0645D /* FlickrPictureCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPictureCVCell.swift; sourceTree = "<group>"; };
+		ED94A59727A347B100F0645D /* FlickrPictureCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlickrPictureCVCell.xib; sourceTree = "<group>"; };
+		ED94A59B27A3508400F0645D /* ShowPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPhotoVC.swift; sourceTree = "<group>"; };
+		ED94A5A027A3542E00F0645D /* FlickerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerWrapper.swift; sourceTree = "<group>"; };
+		ED94A5AF27A357F500F0645D /* Array + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED325E4627A32AD90072F63D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED94A59427A3478200F0645D /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED325E4027A32AD90072F63D = {
+			isa = PBXGroup;
+			children = (
+				ED325E4B27A32AD90072F63D /* showoff test */,
+				ED325E4A27A32AD90072F63D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED325E4A27A32AD90072F63D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED325E4927A32AD90072F63D /* showoff test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED325E4B27A32AD90072F63D /* showoff test */ = {
+			isa = PBXGroup;
+			children = (
+				ED325E4C27A32AD90072F63D /* AppDelegate.swift */,
+				ED325E4E27A32AD90072F63D /* SceneDelegate.swift */,
+				ED94A5A927A354A600F0645D /* Pages */,
+				ED325E6127A32B200072F63D /* Utils */,
+				ED325E6227A32B2F0072F63D /* Helpers */,
+				ED325E5527A32ADA0072F63D /* Assets.xcassets */,
+				ED325E5727A32ADA0072F63D /* LaunchScreen.storyboard */,
+				ED325E5A27A32ADA0072F63D /* Info.plist */,
+			);
+			path = "showoff test";
+			sourceTree = "<group>";
+		};
+		ED325E6127A32B200072F63D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ED325E6327A32B690072F63D /* FlickrAPI.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ED325E6227A32B2F0072F63D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ED94A58F27A32EB000F0645D /* NetworkManager.swift */,
+				ED94A5AF27A357F500F0645D /* Array + Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ED94A59E27A353E200F0645D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ED94A5AB27A354C800F0645D /* View Model */,
+				ED94A59F27A353FE00F0645D /* Model */,
+				ED94A5A427A3546100F0645D /* View Controllers */,
+				ED94A5A627A3548900F0645D /* Cells */,
+				ED325E5227A32AD90072F63D /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ED94A59F27A353FE00F0645D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED94A5A027A3542E00F0645D /* FlickerWrapper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED94A5A427A3546100F0645D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED94A59B27A3508400F0645D /* ShowPhotoVC.swift */,
+				ED325E5027A32AD90072F63D /* FlickrPicturesVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		ED94A5A627A3548900F0645D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED94A5A727A3549200F0645D /* FlickerPictureCVCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ED94A5A727A3549200F0645D /* FlickerPictureCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED94A59727A347B100F0645D /* FlickrPictureCVCell.xib */,
+				ED94A59627A347B100F0645D /* FlickrPictureCVCell.swift */,
+			);
+			path = FlickerPictureCVCell;
+			sourceTree = "<group>";
+		};
+		ED94A5A927A354A600F0645D /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				ED94A59E27A353E200F0645D /* Main */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		ED94A5AB27A354C800F0645D /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED94A58C27A32CF200F0645D /* FlickrPicturesVM.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED325E4827A32AD90072F63D /* showoff test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED325E5D27A32ADA0072F63D /* Build configuration list for PBXNativeTarget "showoff test" */;
+			buildPhases = (
+				ED325E4527A32AD90072F63D /* Sources */,
+				ED325E4627A32AD90072F63D /* Frameworks */,
+				ED325E4727A32AD90072F63D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "showoff test";
+			packageProductDependencies = (
+				ED94A59327A3478200F0645D /* Kingfisher */,
+			);
+			productName = "showoff test";
+			productReference = ED325E4927A32AD90072F63D /* showoff test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED325E4127A32AD90072F63D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					ED325E4827A32AD90072F63D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = ED325E4427A32AD90072F63D /* Build configuration list for PBXProject "showoff test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED325E4027A32AD90072F63D;
+			packageReferences = (
+				ED94A59227A3478200F0645D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = ED325E4A27A32AD90072F63D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED325E4827A32AD90072F63D /* showoff test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED325E4727A32AD90072F63D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED94A59927A347B100F0645D /* FlickrPictureCVCell.xib in Resources */,
+				ED325E5927A32ADA0072F63D /* LaunchScreen.storyboard in Resources */,
+				ED325E5627A32ADA0072F63D /* Assets.xcassets in Resources */,
+				ED325E5427A32AD90072F63D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED325E4527A32AD90072F63D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED94A5A127A3542E00F0645D /* FlickerWrapper.swift in Sources */,
+				ED94A59C27A3508400F0645D /* ShowPhotoVC.swift in Sources */,
+				ED94A59027A32EB000F0645D /* NetworkManager.swift in Sources */,
+				ED94A5B027A357F500F0645D /* Array + Extensions.swift in Sources */,
+				ED325E6427A32B690072F63D /* FlickrAPI.swift in Sources */,
+				ED325E5127A32AD90072F63D /* FlickrPicturesVC.swift in Sources */,
+				ED325E4D27A32AD90072F63D /* AppDelegate.swift in Sources */,
+				ED94A58D27A32CF200F0645D /* FlickrPicturesVM.swift in Sources */,
+				ED325E4F27A32AD90072F63D /* SceneDelegate.swift in Sources */,
+				ED94A59827A347B100F0645D /* FlickrPictureCVCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED325E5227A32AD90072F63D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED325E5327A32AD90072F63D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED325E5727A32ADA0072F63D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED325E5827A32ADA0072F63D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED325E5B27A32ADA0072F63D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED325E5C27A32ADA0072F63D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED325E5E27A32ADA0072F63D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T783FPJSM6;
+				INFOPLIST_FILE = "showoff test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonaharel.showoff-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED325E5F27A32ADA0072F63D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T783FPJSM6;
+				INFOPLIST_FILE = "showoff test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonaharel.showoff-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED325E4427A32AD90072F63D /* Build configuration list for PBXProject "showoff test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED325E5B27A32ADA0072F63D /* Debug */,
+				ED325E5C27A32ADA0072F63D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED325E5D27A32ADA0072F63D /* Build configuration list for PBXNativeTarget "showoff test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED325E5E27A32ADA0072F63D /* Debug */,
+				ED325E5F27A32ADA0072F63D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED94A59227A3478200F0645D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED94A59327A3478200F0645D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED94A59227A3478200F0645D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ED325E4127A32AD90072F63D /* Project object */;
+}
