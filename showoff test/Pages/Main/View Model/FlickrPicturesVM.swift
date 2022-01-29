@@ -22,7 +22,7 @@ class FlickrPicturesVM {
         getRecentPhotos()
     }
     
-    func getRecentPhotos(photosPerPage: Int = 20, pageNumber: Int = 1){
+    func getRecentPhotos(){
         let params = ["per_page" : "\(photosPerPage)",
                       "page": "\(pageNumber)"]
         isLoading = true
@@ -48,7 +48,7 @@ class FlickrPicturesVM {
     func getPhotosForNextPage(photoId: String?){
         //checking if current photo is the 15th from the end and if true, loading the next page
         if photoId == lastPhotoId {
-            getRecentPhotos(photosPerPage: photosPerPage, pageNumber: pageNumber)
+            getRecentPhotos()
         }
     }
 }
