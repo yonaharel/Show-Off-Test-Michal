@@ -68,13 +68,18 @@ If yes: what is the process? Describe the process End-To-End.
 
 I haven't had the chance yet, since I am developing and releasing with Firebase.
 but the process is: 
-Assemble App Store Information \n
-Create a Bundle Identifier
-Create a Certificate Signing Request
-Create an App Store Production Certificate
-Create a Production Provisioning Profile
-Create an App Store Listing
-Create a Release Build
-Fill in the Version Information
-Submit Version for Review
-Release
+* Assemble App Store Information
+* Create a Bundle Identifier
+* Create a Certificate Signing Request
+* Create an App Store Production Certificate
+* Create a Production Provisioning Profile
+* Create an App Store Listing
+* Create a Release Build
+* Fill in the Version Information
+* Submit Version for Review
+* Release
+
+
+
+
+
